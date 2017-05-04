@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sahurjt.bstdriver.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:title="@string/driver_home"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/general_layout_padding_all">
+
+            <ImageView
+                android:id="@+id/imgDriver"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/anon_driver" />
+
+            <TextView
+                android:id="@+id/txtDriverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgDriver"
+                android:padding="@dimen/txt_profile_padding"
+                android:text="@string/txt_default_driver_name"
+                android:textSize="@dimen/txt_size_profile" />
+
+            <TextView
+                android:id="@+id/txtDriverBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDriverName"
+                android:layout_toRightOf="@id/imgDriver"
+                android:padding="@dimen/txt_profile_padding"
+                android:text="@string/txt_default_bus_name"
+                android:textSize="@dimen/txt_size_profile" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_1"
+            android:layout_marginBottom="@dimen/layout_2_margin_bottom"
+            android:layout_marginTop="@dimen/layout_2_margin_top"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/general_layout_padding_left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_gps_label" />
+
+            <TextView
+                android:id="@+id/txtGpsLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPickAttendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:onClick="onPickClick"
+                android:text="@string/btn_pick_name"
+                android:theme="@style/materialButton" />
+
+            <Button
+                android:id="@+id/btnDropAttendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_common_margin"
+                android:onClick="onDropClick"
+                android:text="@string/btn_drop_name"
+                android:theme="@style/materialButton" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="doLogout"
+            android:text="@string/btn_logout_name"
+            android:theme="@style/materialButton" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

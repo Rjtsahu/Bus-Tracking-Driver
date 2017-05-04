@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BSTDriver</string>
+    <!--string value for LoginActivity-->
+    <string name="login_activity_heading">Bus Tracking Driver</string>
+    <string name="edittext_login_hint">UserName</string>
+    <string name="edittext_password_hint">Password</string>
+    <string name="btn_sign_in">Login</string>
+
+    <!--string value for Home ACtivity-->
+    <string name="txt_default_driver_name">Driver Name</string>
+    <string name="txt_default_bus_name">Bus Number</string>
+    <string name="txt_gps_label">Your Location</string>
+    <string name="btn_pick_name">Pick Up Attendance</string>
+    <string name="btn_drop_name">Drop Attendance</string>
+    <string name="btn_logout_name">Log Out</string>
+    <string name="check_trip">Trip from school to home ?</string>
+    <string name="driver_home">Driver Home</string>
+    <string name="driver_login">Driver Login</string>
+    <string name="present_kids">Present Kids</string>
+    <string name="mark_attendance">Mark attendance</string>
+    <string name="txt_project_by"><![CDATA[Major Project by Rajat,Rishabh & Kamlesh]]></string>
+</resources>

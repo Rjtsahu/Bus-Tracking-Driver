@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:background="@color/panel_list_bg_color_1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/home_variant_icon_36dp"
+            android:contentDescription="Source journey place"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/imgStartPlace"
+            />
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_right_bold_circle_outline"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/school_icon_black_36dp"
+            android:layout_gravity="center"
+            android:contentDescription="Destination journey place"
+            android:id="@+id/imgEndPlace"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/txtStartTime"
+            />
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_right_bold_circle_outline"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/txtEndTime"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JourneyTime"
+            android:id="@+id/txtTotalTime"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color_green"/>
+    </LinearLayout>
+</LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="@dimen/general_layout_padding_all"
+            android:background="@color/panel_list_bg_color_2">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:text="from_gps"
+    android:id="@+id/txtFromGps"
+    android:ellipsize="marquee"
+    android:textColor="@color/txt_color_teal_darker"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="distance"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/txt_color_yellow_dark"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/arrow_right_bold"
+                android:baselineAlignBottom="true"
+                android:id="@+id/imgRightArrow"
+                android:layout_marginStart="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/txtFromGps"
+                android:layout_height="20dp" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to_gps"
+                android:paddingLeft="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imgRightArrow"
+                android:id="@+id/txtToGps"
+                android:ellipsize="marquee"
+                android:textColor="@color/txt_color_teal_darker"
+                />
+        </RelativeLayout>
+
+
+</LinearLayout>

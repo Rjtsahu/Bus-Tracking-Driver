@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F50057</color>
+    <color name="colorPrimaryDark">#C51162</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#f25050</color>
+    <color name="colorAccent">#FF80AB</color>
+
+    <color name="btn_logout_color">#f5e73232</color>
+    <color name="btn_common_fg_color">#fff</color>
+    <color name="tag_bg_common">#fa9e09</color>
+    <color name="txt_color_green">#28a928</color>
+    <color name="txt_color_yellow_dark">#827717</color>
+    <color name="txt_color_teal_darker">#004d40</color>
+    <color name="panel_list_bg_color_1">#d6e7dede</color>
+    <color name="panel_list_bg_color_2">#f8bbd0</color>
+
+</resources>

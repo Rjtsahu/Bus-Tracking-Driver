@@ -247,20 +247,4 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-
-    // just for fun
-    private void getCompanyName(){
-        try{
-            Geocoder geocoder=new Geocoder(this, Locale.ENGLISH);
-           List<Address> list= geocoder.getFromLocationName("software company india",100);
-            int count=0;
-            for(Address l : list){
-                Log.d("loc_"+count,"loc"+l.getAddressLine(0)+" , "+l.getLocality());
-                count++;
-            }
-
-        }catch (Exception e){
-
-        }
-    }
 }
